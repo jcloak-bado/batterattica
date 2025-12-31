@@ -111,37 +111,6 @@
   }
 }
         
-    
-    /*#window {
-        background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1bafc2fa-cc31-4e36-b718-4246d87d2cf2/dekst3p-71203106-be50-44a3-b424-e377c6572bef.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8xYmFmYzJmYS1jYzMxLTRlMzYtYjcxOC00MjQ2ZDg3ZDJjZjIvZGVrc3QzcC03MTIwMzEwNi1iZTUwLTQ0YTMtYjQyNC1lMzc3YzY1NzJiZWYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.uhTgXbAjc6DWQaHGvZNSnpP8OPdjMkcOxz6bgme0Mnk);
-        background-size: contain;
-        width: 750px;
-        height: 485px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: auto;
-        margin-top: auto;
-        padding-left: 10px;
-        padding-right: 20px;
-        padding-top: 50px;
-            
-        }*/
-    
-        
-    #box {
-        height: auto;
-        width: 400px;
-        background-color: white;
-        padding: 20px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 100px;
-        border-radius: 0px;
-        outline-style: solid;
-        outline-color: hotpink;
-        outline-width: 15px;
-        }
-        
     .sliding-background {
     background: url(scrollbar.png) repeat-x;
     background-size: contain;
@@ -156,48 +125,88 @@
         100% {transform: translate3d(-490px, 0, 0);
         }
     }
+     
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+        }    
         
-    .shop-hover {
-  /* Set the default image as a background */
-  background-image: url(B-shop.png);
-  background-size: contain;
-  height: 80px;
+  .image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.shop {
+  position: relative;
   width: 149px;
-  float: right;
-        }
-    .shop-hover:hover {
-  /* Change the background image on hover */
-  background-image: url(B-shop2.png);
-        }
-        
-    .chars-hover {
-  /* Set the default image as a background */
-  background-image: url(B-Chars.png);
+}
+
+.shop-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0s ease;
+  background-image: url(B-Shop2.png);
   background-size: contain;
-  height: 80px;
+}
+
+.shop:hover .shop-overlay {
+  opacity: 1;
+}
+
+.chars {
+  position: relative;
   width: 302px;
-  float: right;
+}
 
-        }
-    .chars-hover:hover {
-  /* Change the background image on hover */
+.chars-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0s ease;
   background-image: url(B-Chars2.png);
-        }
-
-    .email-hover {
-  /* Set the default image as a background */
-  background-image: url(B-Email.png);
   background-size: contain;
-  height: 80px;
-  width: 203px;
-  float: right;
+}
 
-        }
-    .email-hover:hover {
-  /* Change the background image on hover */
+.chars:hover .chars-overlay {
+  opacity: 1;
+}
+
+.email {
+  position: relative;
+  width: 220px;
+}
+
+.email-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0s ease;
   background-image: url(B-Email2.png);
-        }
-    
+  background-size: contain;
+}
+
+.email:hover .email-overlay {
+  opacity: 1;
+}
+        
     </style>
     
     
@@ -234,11 +243,23 @@
 <!--LEFT-->
   <div class="column left" style="background-color:#c5ff61;">
     
-        <p style="text-align:right;" ><a href=shop.html><div class="shop-hover"></div></a></p>
-    
-        <p><a href=https://www.w3schools.com/html/html_links.asp><div class="chars-hover"></div></a></p>
+      <div class="buttons">
+        <p><div class="shop">
+        <a href="shop.html"><img src="B-shop.png" class="image">
+        <div class="shop-overlay"></div></a>
+          </div></div>
       
-        <p><a href=https://www.w3schools.com/html/html_links.asp><div class="email-hover"></div></a></p>
+      <div class="buttons">
+        <div class="chars">
+        <a href="chars.html"><img src="B-Chars.png" class="image">
+        <div class="chars-overlay"></div></a>
+          </div></div>
+      
+      <div class="buttons">
+        <div class="email">
+        <a href="email.html"><img src="B-Email.png" class="image">
+        <div class="email-overlay"></div></a>
+          </div></div>
       
     </div>
     
