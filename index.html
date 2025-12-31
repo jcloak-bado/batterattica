@@ -9,19 +9,17 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
         
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
     </head>
-    
-    
-    
-    
+   
     
     
     
     <style>
-    html {
-        background-image:url(BGpattern.png);
-        background-size: 150px;
-    }
+       
+        html { background-color: yellow}    
         
     p {
     font-family: "Yomogi", cursive;
@@ -53,12 +51,68 @@
     font-size: 30px;
         }
     
+    * {
+  box-sizing: border-box;
+}
+
+/* Style the header */
+.header {
+  background-image:url(BGpattern.png);
+  background-size: 100px; 
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  overflow: hidden;
+}
         
-    body {
-            text-align: center;
-    }
+/* Container for flexboxes */
+.row {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.column {
+  padding: 10px;
+  
+}
+
+.column.left {
+   -webkit-flex: 1;
+   -ms-flex: 1;
+   flex: 1;
+
+}
+
+.column.middle {
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+
+}
+        
+.column.right {
+   -webkit-flex: 1;
+   -ms-flex: 1;
+   flex: 1;
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+        
     
-    #window {
+    /*#window {
         background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1bafc2fa-cc31-4e36-b718-4246d87d2cf2/dekst3p-71203106-be50-44a3-b424-e377c6572bef.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8xYmFmYzJmYS1jYzMxLTRlMzYtYjcxOC00MjQ2ZDg3ZDJjZjIvZGVrc3QzcC03MTIwMzEwNi1iZTUwLTQ0YTMtYjQyNC1lMzc3YzY1NzJiZWYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.uhTgXbAjc6DWQaHGvZNSnpP8OPdjMkcOxz6bgme0Mnk);
         background-size: contain;
         width: 750px;
@@ -70,10 +124,9 @@
         padding-left: 10px;
         padding-right: 20px;
         padding-top: 50px;
-        
-        
             
-        }
+        }*/
+    
         
     #box {
         height: auto;
@@ -87,25 +140,64 @@
         outline-style: solid;
         outline-color: hotpink;
         outline-width: 15px;
-    }
-        
-    #box2 {
-        height: auto;
-        width: 600px;
-        background-color: cadetblue;
-        padding: 20px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 100px;
-        border-radius: 0px;
-        outline-style: solid;
-        outline-color: hotpink;
-        outline-width: 15px;
         }
         
+    .sliding-background {
+    background: url(scrollbar.png) repeat-x;
+    background-size: contain;
+    height: 80px;
+    width: 1960px;
+    animation: slide 10s linear infinite;
+    }
         
+    @keyframes slide {
+        0% {transform: translate3d(0, 0, 0);
+        }
+        100% {transform: translate3d(-490px, 0, 0);
+        }
+    }
         
+    .shop-hover {
+  /* Set the default image as a background */
+  background-image: url(B-shop.png);
+  background-size: contain;
+  height: 80px;
+  width: 149px;
+  float: right;
+        }
+    .shop-hover:hover {
+  /* Change the background image on hover */
+  background-image: url(B-shop2.png);
+        }
         
+    .chars-hover {
+  /* Set the default image as a background */
+  background-image: url(B-Chars.png);
+  background-size: contain;
+  height: 80px;
+  width: 302px;
+  float: right;
+
+        }
+    .chars-hover:hover {
+  /* Change the background image on hover */
+  background-image: url(B-Chars2.png);
+        }
+
+    .email-hover {
+  /* Set the default image as a background */
+  background-image: url(B-Email.png);
+  background-size: contain;
+  height: 80px;
+  width: 203px;
+  float: right;
+
+        }
+    .email-hover:hover {
+  /* Change the background image on hover */
+  background-image: url(B-Email2.png);
+        }
+    
     </style>
     
     
@@ -115,10 +207,104 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <body>
+    
+
+
+<div class="header">
+    
+  <img src="BadoOnline_Transp.gif" height=250>
+  <div class="sliding-background"></div>
+</div>
         
+<div class="row">
+    
+<!--LEFT-->
+  <div class="column left" style="background-color:#c5ff61;">
+    
+        <p style="text-align:right;" ><a href=shop.html><div class="shop-hover"></div></a></p>
+    
+        <p><a href=https://www.w3schools.com/html/html_links.asp><div class="chars-hover"></div></a></p>
+      
+        <p><a href=https://www.w3schools.com/html/html_links.asp><div class="email-hover"></div></a></p>
+      
+    </div>
+    
+    
+    
+    
+<!--CENTER-->
+
+  <div class="column middle" style="background-color:#fffaa3;">
+    
+            
+          
+            <h1>Where am I?</h1>
+      
+      
+      
+            <p>Batterattica is a fun funny comic and magazine for silly geese!</p>
+            <p>Welcome to our hub on the web.</p>
+      
+            <h1>Preview Issue #1!</h1>
+      
+            <p>
+            <img src="coverweb.jpg" style="max-width:100%; height:auto;"> 
+            </p>
+            <p>
+            <img src="spread%201%20web.jpg" style="max-width:100%; height:auto;"> 
+            </p>
+            <p>
+            <img src="spread%202%20web.jpg" style="max-width:100%; height:auto;"> 
+            </p>
+            <p>
+            <img src="spread%203%20web.jpg" style="max-width:100%; height:auto;"> 
+            </p>
+            <p>
+            <img src="spread%204%20web.jpg" style="max-width:100%; height:auto;"> 
+            </p>
+      
+            <h3>HAVE CAUTION!</h3>
+            <p><img src="Construction.png" height=300></p>
+            <p>This website is SEVERELY under construction...</p>
+            <p>Stay tuned!</p>
+       
+    
+    
+    </div>
+    
+    
+    
+    
+    
+    
+<!--RIGHT-->
+  <div class="column right" style="background-color:#c5ff61;">Column</div>
+
+    
+</div>
+
+
+<div class="footer">
+  <p>Footer</p>
+</div>
+
+        
+        <!--
         <div id=window>
-        <p><img src="BadoOnline_Transp.gif" height=450></p>
+        <p><img src="BadoOnline_Transp.gif" height=250></p>
         </div>
         
         <p><img src="Welcome.gif" height=180></p>
@@ -135,7 +321,7 @@
             <p>This website is SEVERELY under construction...</p>
             <p>Stay tuned!</p>
         </div>
-       
+       -->
           
     </body>
 
