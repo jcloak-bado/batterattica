@@ -4,7 +4,6 @@
     <head>
         <title>Batterattica ONLINE!</title>
         <link rel="stylesheet" href="styles.css" />
-        
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
@@ -15,217 +14,9 @@
     </head>
    
     
-    
-    
-    <style>
-       
-        html { background-color: yellow}    
-        
-    p {
-    font-family: "Yomogi", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    }
-       
-    h1 {
-    font-family: "Yomogi", cursive;
-    font-weight: 400;
-    font-style: normal;
-    }
-    h2 {
-    font-family: "Yomogi", cursive;
-    font-weight: 400;
-    font-style: normal;
-    }
-    h3 {
-    font-family: "Yomogi", cursive;
-    font-weight: 400;
-    font-style: normal;
-    }
-    h4 {
-    font-family: "Yomogi", cursive;
-    font-weight: 400;
-    font-style: normal;
-    color: white;
-    font-size: 30px;
-        }
-    
-    * {
-  box-sizing: border-box;
-}
 
-/* Style the header */
-.header {
-  background-image:url(BGpattern.png);
-  background-size: 100px; 
-  padding: 10px;
-  text-align: center;
-  font-size: 35px;
-  overflow: hidden;
-}
-        
-/* Container for flexboxes */
-.row {
-  display: -webkit-flex;
-  display: flex;
-}
+    
 
-.column {
-  padding: 10px;
-  
-}
-
-.column.left {
-   -webkit-flex: 1;
-   -ms-flex: 1;
-   flex: 1;
-
-}
-
-.column.middle {
-  -webkit-flex: 2;
-  -ms-flex: 2;
-  flex: 2;
-
-}
-        
-.column.right {
-   -webkit-flex: 1;
-   -ms-flex: 1;
-   flex: 1;
-}
-
-/* Style the footer */
-.footer {
-  background-color: #f1f1f1;
-  padding: 10px;
-  text-align: center;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  .row {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
-}
-        
-    .sliding-background {
-    background: url(scrollbar.png) repeat-x;
-    background-size: contain;
-    height: 80px;
-    width: 1960px;
-    animation: slide 10s linear infinite;
-    }
-        
-    @keyframes slide {
-        0% {transform: translate3d(0, 0, 0);
-        }
-        100% {transform: translate3d(-490px, 0, 0);
-        }
-    }
-     
-
-.buttons {
-    display: flex;
-    justify-content: flex-end;
-        }    
-        
-  .image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.shop {
-  position: relative;
-  width: 149px;
-}
-
-.shop-overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0s ease;
-  background-image: url(B-Shop2.png);
-  background-size: contain;
-}
-
-.shop:hover .shop-overlay {
-  opacity: 1;
-}
-
-.chars {
-  position: relative;
-  width: 302px;
-}
-
-.chars-overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0s ease;
-  background-image: url(B-Chars2.png);
-  background-size: contain;
-}
-
-.chars:hover .chars-overlay {
-  opacity: 1;
-}
-
-.email {
-  position: relative;
-  width: 220px;
-}
-
-.email-overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0s ease;
-  background-image: url(B-Email2.png);
-  background-size: contain;
-}
-
-.email:hover .email-overlay {
-  opacity: 1;
-}
-        
-    </style>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     <body>
@@ -234,7 +25,9 @@
 
 <div class="header">
     
-  <img src="BadoOnline_Transp.gif" height=250>
+<audio controls autoplay loop><source src="Jackie%20Davis%20-%20Ma%C3%B1ana%20(Is%20Soon%20Enough%20For%20Me).mp3" type="audio/mpeg"> </audio>
+    
+<p><a href="index.html"><img src="BadoOnline_Transp.gif" height=250></a></p>
   <div class="sliding-background"></div>
 </div>
         
@@ -272,14 +65,15 @@
     
             
           
-            <h1>Where am I?</h1>
+            <h1 style="text-align:center;">Where am I?</h1>
       
       
       
-            <p>Batterattica is a fun funny comic and magazine for silly geese!</p>
-            <p>Welcome to our hub on the web.</p>
+            <p style="text-align:center;">Batterattica is a fun funny comic and magazine for silly geese!</p>
+            <p style="text-align:center;">Welcome to our hub on the web.</p>
       
-            <h1>Preview Issue #1!</h1>
+      <div class="box">
+          <h2>Preview Issue #1!</h2></div>
       
             <p>
             <img src="coverweb.jpg" style="max-width:100%; height:auto;"> 
@@ -296,10 +90,10 @@
             <p>
             <img src="spread%204%20web.jpg" style="max-width:100%; height:auto;"> 
             </p>
-      
+      <div class="box"><p>Wow! want more? visit <a href="shop.html">the shop</a> to buy a copy!</p></div>
             <h3>HAVE CAUTION!</h3>
             <p><img src="Construction.png" height=300></p>
-            <p>This website is SEVERELY under construction...</p>
+            <p>This website is  under construction...</p>
             <p>Stay tuned!</p>
        
     
@@ -312,51 +106,34 @@
     
     
 <!--RIGHT-->
-  <div class="column right" style="background-color:#c5ff61;">Column</div>
+  <div class="column right" style="background-color:#c5ff61;">
+      
+      <h3>Suggest a name for this bird thing!! Click below!</h3>
+      <img src="TBD.png">
+      <div class=box2><h2 >About the Author:</h2></div>
+      <img src="author.png">
+      <p>[ INSERT BIO HERE ] </p>
+    
+    
+    
+    </div>
 
     
 </div>
 
 
 <div class="footer">
-  <p>Footer</p>
+  <p>
+    &copy; 2025
+    </p>
 </div>
 
-        
-        <!--
-        <div id=window>
-        <p><img src="BadoOnline_Transp.gif" height=250></p>
-        </div>
-        
-        <p><img src="Welcome.gif" height=180></p>
-        
-        <div id=box>
-            <h1>Where am I?</h1> 
-            <p>Batterattica is a fun funny comic and magazine for silly geese!</p>
-            <p>Welcome to our hub on the web.</p>
-        </div>
-        
-        <div id=box>
-            <h3>HAVE CAUTION!</h3>
-            <p><img src="Construction.png" height=300></p>
-            <p>This website is SEVERELY under construction...</p>
-            <p>Stay tuned!</p>
-        </div>
-       -->
+
+
+      
           
     </body>
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     

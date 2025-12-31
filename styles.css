@@ -1,0 +1,227 @@
+
+       
+        html { background-color: yellow}    
+        
+    p {
+    font-family: "Yomogi", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    }
+
+    ul {
+    font-family: "Yomogi", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    }
+       
+    h1 {
+    font-family: "Yomogi", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    }
+    h2 {
+    font-family: "Yomogi", cursive;
+    font-weight: 400;
+    font-style: normal; 
+    margin: 0;
+
+    }
+    h3 {
+    font-family: "Yomogi", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    }
+    h4 {
+    font-family: "Yomogi", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 30px;
+    margin: 0;
+        }
+    
+    * {
+  box-sizing: border-box;
+}
+
+/* Style the header */
+.header {
+  background-image:url(BGpattern.png);
+  background-size: 100px; 
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  overflow: hidden;
+}
+        
+/* Container for flexboxes */
+.row {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.column {
+  padding: 10px;
+  
+}
+
+.column.left {
+   -webkit-flex: 1;
+   -ms-flex: 1;
+   flex: 1;
+
+}
+
+.column.middle {
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+
+}
+        
+.column.right {
+   -webkit-flex: 1;
+   -ms-flex: 1;
+   flex: 1;
+}
+
+/* Style the footer */
+.footer {
+  background-color: yellow;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+        
+    .sliding-background {
+    background: url(scrollbar.png) repeat-x;
+    background-size: contain;
+    height: 80px;
+    width: 1960px;
+    animation: slide 10s linear infinite;
+    }
+        
+    @keyframes slide {
+        0% {transform: translate3d(0, 0, 0);
+        }
+        100% {transform: translate3d(-490px, 0, 0);
+        }
+    }
+     
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+        }    
+        
+  .image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.shop {
+  position: relative;
+  width: 149px;
+}
+
+.shop-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0s ease;
+  background-image: url(B-Shop2.png);
+  background-size: contain;
+}
+
+.shop:hover .shop-overlay {
+  opacity: 1;
+}
+
+.chars {
+  position: relative;
+  width: 302px;
+}
+
+.chars-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0s ease;
+  background-image: url(B-Chars2.png);
+  background-size: contain;
+}
+
+.chars:hover .chars-overlay {
+  opacity: 1;
+}
+
+.email {
+  position: relative;
+  width: 220px;
+}
+
+.email-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0s ease;
+  background-image: url(B-Email2.png);
+  background-size: contain;
+}
+
+.email:hover .email-overlay {
+  opacity: 1;
+}
+        
+.box {
+    background-color: #c8f0ff;
+    border-style: solid;
+    border-radius: 12px;
+    border-color: hotpink;
+    border-width: thick;
+    padding: 10px;
+        }
+        
+.box2 {
+    background-color: #ffff61;
+    border-style: solid;
+    border-radius: 12px;
+    border-color: #00aeef;
+    border-width: thick;
+    padding: 10px;
+        }
+
+.blackbox {
+    background-color: black;
+    border-style: none;
+    border-radius: 12px;
+    padding: 10px;
+}
+        
