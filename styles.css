@@ -66,6 +66,7 @@
 
 .column {
   padding: 10px;
+  flex: 50%;
   
 }
 
@@ -105,17 +106,17 @@
 }
         
     .sliding-background {
-    background: url(scrollbar.png) repeat-x;
+    background: url(scrollbar3.png) repeat-x;
     background-size: contain;
     height: 80px;
-    width: 1960px;
-    animation: slide 10s linear infinite;
+    width: 2697px;
+    animation: slide 20s linear infinite;
     }
         
     @keyframes slide {
         0% {transform: translate3d(0, 0, 0);
         }
-        100% {transform: translate3d(-490px, 0, 0);
+        100% {transform: translate3d(-899px, 0, 0);
         }
     }
      
@@ -226,3 +227,9 @@
     overflow: auto;
 }
         
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
