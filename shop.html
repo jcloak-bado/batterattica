@@ -11,6 +11,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
+        <!--Paypal-->
+            <script 
+            src="https://www.paypal.com/sdk/js?client-id=BAA28jmIUwWXY4mSFsb0xn6oFXgF-lEmqyDOPOPjQBNyLbUvyYvzAdpoVFqaw41_WhKc90NtDVWCneAEZo&components=hosted-buttons&enable-funding=venmo&currency=USD">
+            </script>
+        
     </head>
    
     
@@ -63,13 +68,19 @@
 
   <div class="column middle" style="background-color:#fffaa3;">
     
-            
-      
-            <h1>HAVE CAUTION!</h1>
-            <p><img src="Construction.png" height=300></p>
-            <p>This page is  under construction...</p>
-            <p>Stay tuned!</p>
+            <div class="box">
+          <h2>Buy Issue #1!</h2></div>
+            <p>Buy it for grandma! Buy it for grandpa!</p>
+            <p>Buy it for hairy Pete down the street!</p>
+            <p>Buy it like it's going out of style!</p>
+            <p>No refunds or returns! Come on now it's a self-published comic book!</p>
        
+      <div id="paypal-container-3K9S8SHKJ528C"></div>
+            <script>
+            paypal.HostedButtons({
+            hostedButtonId: "3K9S8SHKJ528C",
+            }).render("#paypal-container-3K9S8SHKJ528C")
+            </script>
     
     
     </div>
